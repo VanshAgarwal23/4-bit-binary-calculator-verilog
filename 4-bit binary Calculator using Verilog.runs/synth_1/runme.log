@@ -9,8 +9,8 @@ INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detect
 # SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
 # IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
 # SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
-# Start of session at: Sun Sep 13 21:02:36 2026
-# Process ID         : 15260
+# Start of session at: Sun Sep 13 21:23:57 2026
+# Process ID         : 20568
 # Current directory  : C:/Users/Test/Vivado_projects/4-bit binary Calculator using Verilog/4-bit binary Calculator using Verilog.runs/synth_1
 # Command line       : vivado.exe -log calculator.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source calculator.tcl
 # Log file           : C:/Users/Test/Vivado_projects/4-bit binary Calculator using Verilog/4-bit binary Calculator using Verilog.runs/synth_1/calculator.vds
@@ -25,28 +25,28 @@ INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detect
 # Host memory        : 14901 MB
 # Swap memory        : 10200 MB
 # Total Virtual      : 25102 MB
-# Available Virtual  : 8629 MB
+# Available Virtual  : 8369 MB
 #-----------------------------------------------------------
 
 ****** Vivado v2026.1 (64-bit)
   **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
   **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
   **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
-  **** Start of session at: Sun Sep 13 21:02:36 2026
+  **** Start of session at: Sun Sep 13 21:23:57 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source calculator.tcl -notrace
-create_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 591.574 ; gain = 267.121
+create_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 591.785 ; gain = 268.973
 Command: synth_design -top calculator -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a35t'
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 4100
+INFO: [Synth 8-7075] Helper process launched with PID 15300
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1170.031 ; gain = 570.488
+Starting Synthesize : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1171.246 ; gain = 571.266
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'calculator' [C:/Users/Test/Vivado_projects/4-bit binary Calculator using Verilog/4-bit binary Calculator using Verilog.srcs/sources_1/new/calculator.v:1]
 INFO: [Synth 8-6157] synthesizing module 'Four_bit_adder' [C:/Users/Test/Vivado_projects/4-bit binary Calculator using Verilog/4-bit binary Calculator using Verilog.srcs/sources_1/new/Four_bit_adder.v:1]
@@ -57,10 +57,10 @@ INFO: [Synth 8-6157] synthesizing module 'mux' [C:/Users/Test/Vivado_projects/4-
 INFO: [Synth 8-6155] done synthesizing module 'mux' (0#1) [C:/Users/Test/Vivado_projects/4-bit binary Calculator using Verilog/4-bit binary Calculator using Verilog.srcs/sources_1/new/mux.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'calculator' (0#1) [C:/Users/Test/Vivado_projects/4-bit binary Calculator using Verilog/4-bit binary Calculator using Verilog.srcs/sources_1/new/calculator.v:1]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1289.750 ; gain = 690.207
+Finished Synthesize : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1290.023 ; gain = 690.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1289.750 ; gain = 690.207
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1290.023 ; gain = 690.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -68,10 +68,10 @@ Start Loading Part and Timing Information
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1289.750 ; gain = 690.207
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1290.023 ; gain = 690.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1289.750 ; gain = 690.207
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1290.023 ; gain = 690.043
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -100,20 +100,20 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1505.633 ; gain = 906.090
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 1506.254 ; gain = 906.273
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1505.633 ; gain = 906.090
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 1506.254 ; gain = 906.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1505.633 ; gain = 906.090
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 1506.254 ; gain = 906.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -131,37 +131,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1762.980 ; gain = 1163.438
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 1764.172 ; gain = 1164.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1762.980 ; gain = 1163.438
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 1764.172 ; gain = 1164.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1762.980 ; gain = 1163.438
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 1764.172 ; gain = 1164.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1762.980 ; gain = 1163.438
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 1764.172 ; gain = 1164.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1762.980 ; gain = 1163.438
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 1764.172 ; gain = 1164.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1762.980 ; gain = 1163.438
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 1764.172 ; gain = 1164.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -191,16 +191,16 @@ Report Instance Areas:
 |1     |top      |       |    22|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1762.980 ; gain = 1163.438
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 1764.172 ; gain = 1164.191
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1762.980 ; gain = 1163.438
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1762.980 ; gain = 1163.438
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 1764.172 ; gain = 1164.191
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 1765.137 ; gain = 1164.191
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1777.988 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1779.184 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1888.133 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1889.113 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -208,8 +208,8 @@ Synth Design complete | Checksum: 419deb6e
 INFO: [Common 17-83] Releasing license: Vivado_Synthesis
 18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 1889.141 ; gain = 1297.566
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1889.141 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:21 . Memory (MB): peak = 1890.129 ; gain = 1298.344
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1890.129 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Test/Vivado_projects/4-bit binary Calculator using Verilog/4-bit binary Calculator using Verilog.runs/synth_1/calculator.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file calculator_utilization_synth.rpt -pb calculator_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Sep 13 21:03:42 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 13 21:26:01 2026...
