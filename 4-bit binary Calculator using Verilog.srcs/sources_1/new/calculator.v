@@ -12,7 +12,6 @@ module calculator(
     wire ADD_CARRY;
     wire SUB_BORROW;
 
-    // 4-bit Adder
     Four_bit_adder ADDER (
         .A(A),
         .B(B),
@@ -20,7 +19,6 @@ module calculator(
         .CARRY(ADD_CARRY)
     );
 
-    // 4-bit Subtractor
     four_bit_subtractor SUBTRACTOR (
         .A(A),
         .B(B),
@@ -28,7 +26,6 @@ module calculator(
         .BORROW(SUB_BORROW)
     );
 
-    // Multiplexer
     mux MUX1 (
         .ADD_RESULT(ADD_RESULT),
         .SUB_RESULT(SUB_RESULT),
@@ -36,7 +33,6 @@ module calculator(
         .RESULT(RESULT)
     );
 
-    // Select carry or borrow according to operation
     assign CARRY_BORROW = SEL ? SUB_BORROW : ADD_CARRY;
 
 endmodule

@@ -5,7 +5,6 @@ module mux(
     output [3:0] RESULT
 );
 
-    assign RESULT = (~SEL & ADD_RESULT) |
-                    (SEL & SUB_RESULT);
+    assign RESULT = SEL ? SUB_RESULT : ADD_RESULT;
 
 endmodule
