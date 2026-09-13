@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1789306716">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1789313554">
   <File Type="PA-TCL" Name="calculator.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="calculator_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="calculator_reports.tcl"/>
   <File Type="RDS-RDS" Name="calculator.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="calculator_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="calculator_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="calculator_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="calculator.dcp"/>
