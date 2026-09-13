@@ -1,11 +1,11 @@
 
 # vivado generated files
-.cache/
-.hw/
-.ip_userr_files/
-.runs/
-.sim/
-.gen/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.gen/
 
 #vivado temporary files
 *.jou/
