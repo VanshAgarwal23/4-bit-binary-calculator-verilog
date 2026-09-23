@@ -1,0 +1,138 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Wed Sep 23 18:39:29 2026
+| Host         : HP_PAVILLION running 64-bit major release  (build 9200)
+| Command      : report_timing -max_paths 100 -file reports/impl_timing.rpt
+| Design       : calculator
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 B[1]
+                            (input port)
+  Destination:            CARRY_BORROW
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.295ns  (logic 5.235ns (71.769%)  route 2.059ns (28.231%))
+  Logic Levels:           4  (IBUF=1 LUT5=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V15                                               0.000     0.000 r  B[1]
+                         net (fo=0)                   0.000     0.000    B[1]
+    V15                  IBUF (Prop_ibuf_I_O)         1.466     1.466 r  B_IBUF[1]_inst/O
+                         net (fo=4, unplaced)         0.800     2.266    B_IBUF[1]
+                         LUT6 (Prop_lut6_I2_O)        0.124     2.390 f  RESULT_OBUF[3]_inst_i_2/O
+                         net (fo=2, unplaced)         0.460     2.850    RESULT_OBUF[3]_inst_i_2_n_0
+                         LUT5 (Prop_lut5_I1_O)        0.124     2.974 r  CARRY_BORROW_OBUF_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     3.773    CARRY_BORROW_OBUF
+    L1                   OBUF (Prop_obuf_I_O)         3.521     7.295 r  CARRY_BORROW_OBUF_inst/O
+                         net (fo=0)                   0.000     7.295    CARRY_BORROW
+    L1                                                                r  CARRY_BORROW
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 B[1]
+                            (input port)
+  Destination:            RESULT[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.278ns  (logic 5.249ns (72.117%)  route 2.029ns (27.883%))
+  Logic Levels:           4  (IBUF=1 LUT5=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V15                                               0.000     0.000 f  B[1]
+                         net (fo=0)                   0.000     0.000    B[1]
+    V15                  IBUF (Prop_ibuf_I_O)         1.466     1.466 f  B_IBUF[1]_inst/O
+                         net (fo=4, unplaced)         0.800     2.266    B_IBUF[1]
+                         LUT6 (Prop_lut6_I2_O)        0.124     2.390 r  RESULT_OBUF[3]_inst_i_2/O
+                         net (fo=2, unplaced)         0.430     2.820    RESULT_OBUF[3]_inst_i_2_n_0
+                         LUT5 (Prop_lut5_I2_O)        0.150     2.970 r  RESULT_OBUF[3]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     3.769    RESULT_OBUF[3]
+    V19                  OBUF (Prop_obuf_I_O)         3.509     7.278 r  RESULT_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     7.278    RESULT[3]
+    V19                                                               r  RESULT[3]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A[2]
+                            (input port)
+  Destination:            RESULT[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.261ns  (logic 5.213ns (71.789%)  route 2.048ns (28.211%))
+  Logic Levels:           4  (IBUF=1 LUT2=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W16                                               0.000     0.000 r  A[2]
+                         net (fo=0)                   0.000     0.000    A[2]
+    W16                  IBUF (Prop_ibuf_I_O)         1.464     1.464 r  A_IBUF[2]_inst/O
+                         net (fo=3, unplaced)         0.800     2.264    A_IBUF[2]
+                         LUT2 (Prop_lut2_I1_O)        0.124     2.388 r  RESULT_OBUF[2]_inst_i_2/O
+                         net (fo=1, unplaced)         0.449     2.837    RESULT_OBUF[2]_inst_i_2_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124     2.961 r  RESULT_OBUF[2]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     3.760    RESULT_OBUF[2]
+    U19                  OBUF (Prop_obuf_I_O)         3.501     7.261 r  RESULT_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     7.261    RESULT[2]
+    U19                                                               r  RESULT[2]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 B[1]
+                            (input port)
+  Destination:            RESULT[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.741ns  (logic 5.142ns (76.274%)  route 1.599ns (23.726%))
+  Logic Levels:           3  (IBUF=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V15                                               0.000     0.000 r  B[1]
+                         net (fo=0)                   0.000     0.000    B[1]
+    V15                  IBUF (Prop_ibuf_I_O)         1.466     1.466 r  B_IBUF[1]_inst/O
+                         net (fo=4, unplaced)         0.800     2.266    B_IBUF[1]
+                         LUT5 (Prop_lut5_I1_O)        0.146     2.412 r  RESULT_OBUF[1]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     3.211    RESULT_OBUF[1]
+    E19                  OBUF (Prop_obuf_I_O)         3.530     6.741 r  RESULT_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     6.741    RESULT[1]
+    E19                                                               r  RESULT[1]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A[0]
+                            (input port)
+  Destination:            RESULT[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.681ns  (logic 5.082ns (76.060%)  route 1.599ns (23.940%))
+  Logic Levels:           3  (IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 r  A[0]
+                         net (fo=0)                   0.000     0.000    A[0]
+    V17                  IBUF (Prop_ibuf_I_O)         1.453     1.453 r  A_IBUF[0]_inst/O
+                         net (fo=5, unplaced)         0.800     2.253    A_IBUF[0]
+                         LUT2 (Prop_lut2_I1_O)        0.124     2.377 r  RESULT_OBUF[0]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     3.176    RESULT_OBUF[0]
+    U16                  OBUF (Prop_obuf_I_O)         3.505     6.681 r  RESULT_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     6.681    RESULT[0]
+    U16                                                               r  RESULT[0]
+  -------------------------------------------------------------------    -------------------
+
+
+
+
