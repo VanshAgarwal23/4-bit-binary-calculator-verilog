@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+[README.md](https://github.com/user-attachments/files/32164935/README.md)
+>>>>>>> 0772448f7e758ab9ec524ae135342c530d5df397
 # 4-Bit Binary Calculator Using Verilog
 
 A **4-bit combinational binary calculator** designed and verified in
